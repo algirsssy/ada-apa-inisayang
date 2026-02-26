@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Sayangg 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <canvas id="confetti"></canvas>
+  <div class="hearts" id="hearts"></div>
+
+  <!-- COVER -->
+  <div class="cover" id="cover">
+    <div class="card">
+      <h1 class="script">Hai, Sayangku</h1>
+      <p class="subtitle">Aku punya sesuatu buat kamu…</p>
+      <button class="btn" id="openBtn">Dibuka ya Sayangggg </button>
+      <div id="pwBox" style="display:none;margin-top:18px">
+        <input id="pwInput" type="password" placeholder="Masukkan password dulu ya 💌" style="padding:12px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:white;outline:none;width:70%;max-width:280px">
+        <button class="btn" id="pwSubmit" style="margin-left:8px">Buka</button>
+        <div id="pwError" style="margin-top:10px;color:#ffd1e6;display:none">Passwordnya salah 😝 coba inget lagi </p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LETTER -->
+  <section id="letterSection" style="display:none">
+    <div class="container">
+      <h2>Surat Untukmu</h2>
+      <p class="lead">Dibaca pelan‑pelan ya 💫</p>
+      <div class="letter"><span id="typed"></span><span class="cursor"></span></div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" style="display:none">
+    <div class="container">
+      <div class="grid">
+        <div class="ph"><img src="Galeri/FOTOFAV2.jpeg" alt="foto 1"><span>Favorit</span></div>
+        <div class="ph"><img src="Galeri/foto1.JPG" alt="foto 2"><span>FAV</span></div>
+        <div class="ph"><img src="Galeri/FOTOSENDIRIfav.jpeg" alt="foto 3"><span>FAV</span></div>
+        <div class="ph"><img src="Galeri/Foto Batu.jpeg" alt="foto 4"><span>Foto random</span></div>
+        <div class="ph"><img src="Galeri/FOTOPANTAI.jpeg" alt="foto 5"><span>Foto random</span></div>
+        <div class="ph"><img src="Galeri/FOTORUMAH.jpeg" alt="foto 6"><span>Foto random</span></div>
+        <div class="ph"><img src="Galeri/FOTOSENDIRI.jpeg" alt="foto 7"><span>Foto random</span></div>
+        <div class="ph"><img src="Galeri/Fotosendiri2.jpeg" alt="foto 8"><span>Foto random</span></div>
+        <div class="ph"><img src="Galeri/fotowarung.jpeg" alt="foto 9"><span>Foto random</span></div>
+        <div class="ph"><img src="Galeri/Fotokacapantai.jpeg" alt="foto 10"><span>Foto random</span></div>
+        <div class="ph"><img src="Galeri/fotowarung2.jpeg" alt="foto 11"><span>Foto random</span></div>
+        <div class="ph"><img src="Galeri/fotosepeda.jpeg" alt="foto 12"><span>Foto random</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GIFT -->
+  <section id="giftSection" style="display:none">
+    <div class="container gift-wrap">
+      <div class="gift" id="gift">
+        <div class="lid"></div>
+        <div class="bow"></div>
+      </div>
+      <div class="hint">Klik kotaknya ya…</div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section id="finalPage" style="display:none">
+    <div class="container" style="display:flex;align-items:center;justify-content:center;min-height:100vh;flex-direction:column;">
+      <div id="finalScreen">
+        <h1 class="big">Selamat Ulang Tahun <br>Sayangkuu💖</h1>
+        <p class="sub">Semoga di kepala dua ini semua yang kamu impikan pelan-pelan jadi nyata. Terima kasih sudah hadir di hidupku. Aku sayang kamu, hari ini dan seterusnya.</p>
+        <p class="sib">maaf ya kalo belom bisa ngasi apa apa sayang 🥺🥺🥺</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">Made with ❤ by Alif Sayangmu</footer>
+
+  <audio id="bgm" src="Galeri/lagu.MP3" preload="auto"></audio>
+  <audio id="rocketSfx" src="Galeri/rocket.mp3" preload="auto"></audio>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
